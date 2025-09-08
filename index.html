@@ -1,0 +1,684 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Handcrafted Clay Pottery
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f4ede6; /* light clay beige */
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    /* Custom clay color palette */
+    :root {
+      --clay-red: #b35c3b;
+      --clay-orange: #d98c5a;
+      --clay-brown: #7a4a2e;
+      --clay-cream: #f4ede6;
+      --clay-grey: #a89f91;
+      --clay-dark: #4a3c2b;
+    }
+  </style>
+ </head>
+ <body class="text-clay-dark">
+  <!-- Sticky Header -->
+  <header class="sticky top-0 bg-clay-cream shadow-md z-50 border-b border-clay-orange">
+   <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <a class="text-2xl font-playfair font-bold tracking-wide" href="#home" style="color: var(--clay-red);">
+     ClayCraft
+    </a>
+    <ul class="hidden md:flex space-x-8 font-semibold" style="color: var(--clay-brown);">
+     <li>
+      <a class="hover:text-var(--clay-red) transition" href="#home" style="color: var(--clay-brown);">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-var(--clay-red) transition" href="#shop" style="color: var(--clay-brown);">
+       Shop
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-var(--clay-red) transition" href="#about" style="color: var(--clay-brown);">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-var(--clay-red) transition" href="#contact" style="color: var(--clay-brown);">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <div class="md:hidden">
+     <button aria-label="Toggle Menu" class="focus:outline-none focus:ring-2 focus:ring-clay-red" id="menu-btn" style="color: var(--clay-brown);">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
+    </div>
+   </nav>
+   <div class="hidden bg-clay-cream px-6 pb-4 md:hidden border-t border-clay-orange" id="mobile-menu">
+    <ul class="space-y-4 font-semibold" style="color: var(--clay-brown);">
+     <li>
+      <a class="block hover:text-var(--clay-red) transition" href="#home" style="color: var(--clay-brown);">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-var(--clay-red) transition" href="#shop" style="color: var(--clay-brown);">
+       Shop
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-var(--clay-red) transition" href="#about" style="color: var(--clay-brown);">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-var(--clay-red) transition" href="#contact" style="color: var(--clay-brown);">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6">
+   <!-- Home Section -->
+   <section class="pt-16 pb-20 md:pt-24 md:pb-32" id="home">
+    <div class="text-center max-w-4xl mx-auto">
+     <h1 class="text-4xl md:text-5xl font-playfair font-bold leading-tight mb-6" style="color: var(--clay-red);">
+      Discover the Art of Handcrafted Clay Pottery
+     </h1>
+     <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8" style="color: var(--clay-brown);">
+      Embrace centuries of tradition and craftsmanship with our unique handmade pottery. Each piece tells a story of culture, passion, and artistry, crafted with care to bring warmth and beauty to your home.
+     </p>
+    </div>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+     <a class="group block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition relative" href="#shop">
+      <img alt="Handmade rustic red clay pot with traditional patterns on a wooden table, natural light highlighting the texture" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/30529ef9-3fca-4519-58d4-61df4b539b44.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[rgba(179,92,59,0.85)] to-transparent p-4">
+       <h3 class="text-white text-xl font-semibold">
+        Clay Pots
+       </h3>
+      </div>
+     </a>
+     <a class="group block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition relative" href="#shop">
+      <img alt="Blue glazed decorative pottery pieces with intricate designs displayed on a rustic wooden shelf" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/696fdacb-18d8-4af4-5b72-8b6d2bc86223.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[rgba(217,140,90,0.85)] to-transparent p-4">
+       <h3 class="text-white text-xl font-semibold">
+        Decorative Pieces
+       </h3>
+      </div>
+     </a>
+     <a class="group block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition relative" href="#shop">
+      <img alt="Set of handmade grey clay tableware including plates, bowls, and cups arranged on a linen cloth" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/54b45004-fa92-4645-0149-826ae7d6fb31.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[rgba(168,159,145,0.85)] to-transparent p-4">
+       <h3 class="text-white text-xl font-semibold">
+        Tableware
+       </h3>
+      </div>
+     </a>
+     <a class="group block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition relative" href="#shop">
+      <img alt="Elegant black handmade clay gift items including small vases and trinket boxes on a wooden surface" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/c0c00d4e-3c37-4352-a454-df36c37f8d76.jpg" width="400"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[rgba(74,60,43,0.85)] to-transparent p-4">
+       <h3 class="text-white text-xl font-semibold">
+        Gift Items
+       </h3>
+      </div>
+     </a>
+    </div>
+   </section>
+   <hr class="border-t border-clay-orange my-16 max-w-3xl mx-auto"/>
+   <!-- Authenticity & Craftsmanship Section -->
+   <section class="max-w-4xl mx-auto text-center mb-20 px-4">
+    <h2 class="text-3xl font-playfair font-bold mb-6" style="color: var(--clay-red);">
+     Why Choose Handcrafted Pottery?
+    </h2>
+    <p class="max-w-3xl mx-auto mb-10" style="color: var(--clay-brown); font-size: 1.125rem;">
+     Our pottery is more than just functional items — it’s a celebration of tradition, sustainability, and individuality. Each piece is carefully shaped by skilled artisans using eco-friendly materials, ensuring durability and timeless beauty.
+    </p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-left max-w-3xl mx-auto" style="color: var(--clay-dark);">
+     <li class="flex items-start space-x-3">
+      <i class="fas fa-leaf mt-1" style="color: var(--clay-orange);">
+      </i>
+      <span>
+       <strong>
+        Eco-Friendly Materials:
+       </strong>
+       Crafted using natural clay and sustainable processes.
+      </span>
+     </li>
+     <li class="flex items-start space-x-3">
+      <i class="fas fa-history mt-1" style="color: var(--clay-orange);">
+      </i>
+      <span>
+       <strong>
+        Rich Tradition:
+       </strong>
+       Rooted in centuries-old pottery techniques passed down through generations.
+      </span>
+     </li>
+     <li class="flex items-start space-x-3">
+      <i class="fas fa-star mt-1" style="color: var(--clay-orange);">
+      </i>
+      <span>
+       <strong>
+        Unique Designs:
+       </strong>
+       No two pieces are alike, each reflecting the artisan’s creativity.
+      </span>
+     </li>
+     <li class="flex items-start space-x-3">
+      <i class="fas fa-shield-alt mt-1" style="color: var(--clay-orange);">
+      </i>
+      <span>
+       <strong>
+        Durability:
+       </strong>
+       Built to last with high-quality craftsmanship and materials.
+      </span>
+     </li>
+    </ul>
+   </section>
+   <hr class="border-t border-clay-orange my-16 max-w-3xl mx-auto"/>
+   <!-- Indian Culture Image Section -->
+   <section class="max-w-5xl mx-auto mb-20 px-4">
+    <h2 class="text-3xl font-playfair font-bold text-center mb-10" style="color: var(--clay-red);">
+     Celebrating Indian Culture & Craftsmanship
+    </h2>
+    <div class="rounded-lg overflow-hidden shadow-lg border border-clay-orange">
+     <img alt="Indian artisan woman in traditional attire shaping a clay pot on a pottery wheel in a sunlit workshop, showcasing Indian cultural heritage and craftsmanship" class="w-full h-auto object-cover" height="450" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" width="800"/>
+    </div>
+    <p class="mt-6 text-center text-clay-brown text-lg max-w-3xl mx-auto leading-relaxed">
+     This image captures the essence of Indian pottery tradition, where skilled artisans, often working in warm, sunlit workshops, create beautiful clay pieces that reflect centuries of cultural heritage and artistic expression.
+    </p>
+   </section>
+   <hr class="border-t border-clay-orange my-16 max-w-3xl mx-auto"/>
+   <!-- Shop Now Call to Action -->
+   <section class="text-center mb-20 px-4">
+    <h2 class="text-3xl font-playfair font-bold mb-6" style="color: var(--clay-red);">
+     Ready to Bring Art Into Your Home?
+    </h2>
+    <a class="inline-block bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream font-semibold text-lg px-8 py-4 rounded-lg shadow-lg transition" href="#shop">
+     Shop Now
+    </a>
+   </section>
+   <hr class="border-t border-clay-orange my-16 max-w-3xl mx-auto"/>
+   <!-- Instagram Feed Preview -->
+   <section class="max-w-6xl mx-auto mb-20 px-4">
+    <h2 class="text-3xl font-playfair font-bold text-center mb-10" style="color: var(--clay-red);">
+     Follow Us on Instagram
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+     <a class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <img alt="Instagram post showing a red clay pot with intricate carvings on a rustic wooden table" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e7867cf9-5c68-4079-0ccb-75bbf1f9e71c.jpg" width="400"/>
+     </a>
+     <a class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <img alt="Instagram post featuring blue glazed decorative pottery pieces arranged artistically on a shelf" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/f792e89d-20b7-44a2-6602-4bd6389c767b.jpg" width="400"/>
+     </a>
+     <a class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <img alt="Instagram post showing a grey handmade pottery cup with rustic texture on a stone surface" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/ea487093-d55e-4985-7516-4da772848906.jpg" width="400"/>
+     </a>
+     <a class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <img alt="Instagram post featuring black matte finish pottery vase with minimalist design on a dark wooden table" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e5eed895-e9c4-491a-4b4a-37cc21e36f2c.jpg" width="400"/>
+     </a>
+    </div>
+   </section>
+   <hr class="border-t border-clay-orange my-16 max-w-3xl mx-auto"/>
+   <!-- Shop Section -->
+   <section class="max-w-7xl mx-auto mb-20 px-4" id="shop">
+    <h2 class="text-3xl font-playfair font-bold text-center mb-10" style="color: var(--clay-red);">
+     Shop Our Collection
+    </h2>
+    <div class="flex flex-col md:flex-row md:space-x-8">
+     <!-- Filters -->
+     <aside class="md:w-1/4 mb-8 md:mb-0 bg-clay-cream rounded-lg shadow-md p-6 sticky top-24 h-fit border border-clay-orange">
+      <h3 class="text-xl font-semibold mb-4" style="color: var(--clay-brown);">
+       Filters
+      </h3>
+      <form class="space-y-6" id="filters">
+       <div>
+        <label class="block font-semibold mb-2" for="category" style="color: var(--clay-brown);">
+         Category
+        </label>
+        <select class="w-full border border-clay-brown rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="category" name="category" style="color: var(--clay-dark);">
+         <option value="">
+          All
+         </option>
+         <option value="Clay Pots">
+          Clay Pots
+         </option>
+         <option value="Decorative Pieces">
+          Decorative Pieces
+         </option>
+         <option value="Tableware">
+          Tableware
+         </option>
+         <option value="Gift Items">
+          Gift Items
+         </option>
+        </select>
+       </div>
+       <div>
+        <label class="block font-semibold mb-2" for="color" style="color: var(--clay-brown);">
+         Color
+        </label>
+        <select class="w-full border border-clay-brown rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="color" name="color" style="color: var(--clay-dark);">
+         <option value="">
+          All
+         </option>
+         <option value="Red">
+          Red
+         </option>
+         <option value="White">
+          White
+         </option>
+         <option value="Blue">
+          Blue
+         </option>
+         <option value="Grey">
+          Grey
+         </option>
+         <option value="Black">
+          Black
+         </option>
+        </select>
+       </div>
+       <div>
+        <label class="block font-semibold mb-2" for="price" style="color: var(--clay-brown);">
+         Price (INR)
+        </label>
+        <div class="flex space-x-4">
+         <input aria-label="Minimum price" class="w-1/2 border border-clay-brown rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="price-min" max="2000" min="250" name="price-min" placeholder="Min 250" style="color: var(--clay-dark);" type="number" value="250"/>
+         <input aria-label="Maximum price" class="w-1/2 border border-clay-brown rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="price-max" max="2000" min="250" name="price-max" placeholder="Max 2000" style="color: var(--clay-dark);" type="number" value="2000"/>
+        </div>
+       </div>
+       <div>
+        <label class="block font-semibold mb-2" for="style" style="color: var(--clay-brown);">
+         Style
+        </label>
+        <select class="w-full border border-clay-brown rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="style" name="style" style="color: var(--clay-dark);">
+         <option value="">
+          All
+         </option>
+         <option value="Rustic">
+          Rustic
+         </option>
+         <option value="Modern">
+          Modern
+         </option>
+         <option value="Traditional">
+          Traditional
+         </option>
+        </select>
+       </div>
+      </form>
+     </aside>
+     <!-- Products Grid -->
+     <div class="md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Product 1 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="450">
+       <img alt="Red rustic handmade clay pot with traditional patterns on a wooden table" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/43db84e5-25c7-4b9a-9069-537546e269cc.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         Rustic Red Clay Pot
+        </h3>
+        <p class="flex-grow">
+         Handcrafted red clay pot with intricate traditional carvings, perfect for indoor plants or decoration.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹450
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+      <!-- Product 2 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="600">
+       <img alt="Blue glazed decorative pottery piece with floral patterns on a rustic wooden shelf" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/de56617b-9523-40f9-4529-e9ed10d86ee9.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         Blue Floral Decorative Vase
+        </h3>
+        <p class="flex-grow">
+         Elegant blue glazed vase with hand-painted floral designs, ideal for adding a splash of color to your living space.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹600
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+      <!-- Product 3 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="1200">
+       <img alt="Set of grey handmade clay tableware including plates and bowls arranged on a linen cloth" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/1da94485-c91c-43f3-1970-b4d3722d5432.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         Grey Tableware Set
+        </h3>
+        <p class="flex-grow">
+         Minimalist grey tableware set handcrafted with care, including plates, bowls, and cups for everyday elegance.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹1200
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+      <!-- Product 4 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="750">
+       <img alt="Elegant black handmade clay gift item including a small vase and trinket box on a wooden surface" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/6cfbc889-3e1f-4a8c-9d3b-778354909d4c.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         Black Gift Set
+        </h3>
+        <p class="flex-grow">
+         Sophisticated black matte finish gift set featuring a small vase and trinket box, perfect for special occasions.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹750
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+      <!-- Product 5 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="400">
+       <img alt="White handmade pottery bowl with smooth texture and rustic imperfections on a wooden table" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/6ab0f6f1-d8b1-4c61-3be7-a857d4c79157.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         White Clay Bowl
+        </h3>
+        <p class="flex-grow">
+         Smooth white pottery bowl with subtle rustic charm, perfect for serving or decorative use.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹400
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+      <!-- Product 6 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="550">
+       <img alt="Red glazed decorative pottery piece with traditional patterns on a wooden table" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/a6d6b2f9-740a-4774-4321-88027266ad2c.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         Red Decorative Vase
+        </h3>
+        <p class="flex-grow">
+         Vibrant red glazed vase with traditional motifs, perfect for adding a cultural touch to your decor.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹550
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+      <!-- Product 7 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="250">
+       <img alt="Blue glazed handmade pottery cup with floral designs on a linen cloth" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/49d0f602-e0bc-4335-63a7-557fa5637d1d.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         Blue Tableware Cup
+        </h3>
+        <p class="flex-grow">
+         Hand-painted blue pottery cup with floral patterns, perfect for your morning tea or coffee.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹250
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+      <!-- Product 8 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="650">
+       <img alt="Grey handmade pottery decorative piece with minimalist design on a stone surface" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/f834e8a8-c9bc-4f11-b4e0-2c547c590965.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         Grey Decorative Sculpture
+        </h3>
+        <p class="flex-grow">
+         Minimalist grey pottery sculpture, perfect for modern rustic interiors and art lovers.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹650
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+      <!-- Product 9 -->
+      <article class="bg-clay-cream rounded-lg shadow-md overflow-hidden flex flex-col border border-clay-orange" data-price="1300">
+       <img alt="Black matte finish handmade pottery tableware set including plates and cups on a dark wooden table" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/aa0eea5d-2aab-4236-a6ca-e757805decf1.jpg" width="400"/>
+       <div class="p-4 flex flex-col flex-grow" style="color: var(--clay-brown);">
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--clay-red);">
+         Black Tableware Set
+        </h3>
+        <p class="flex-grow">
+         Elegant black matte tableware set handcrafted for a sophisticated dining experience.
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+         <span class="text-lg font-bold" style="color: var(--clay-dark);">
+          ₹1300
+         </span>
+         <div class="space-x-2">
+          <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Add to Cart
+          </button>
+          <button class="bg-clay-brown hover:bg-[#5a3e27] text-clay-cream px-3 py-1 rounded-md text-sm transition">
+           Buy Now
+          </button>
+         </div>
+        </div>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <hr class="border-t border-clay-orange my-16 max-w-3xl mx-auto"/>
+   <!-- Contact Section -->
+   <section class="max-w-3xl mx-auto mb-20 px-4" id="contact">
+    <h2 class="text-3xl font-playfair font-bold text-center mb-10" style="color: var(--clay-red);">
+     Get in Touch
+    </h2>
+    <form action="#" class="bg-clay-cream rounded-lg shadow-md p-8 space-y-6 border border-clay-orange" method="POST" novalidate="">
+     <div>
+      <label class="block font-semibold mb-2" for="name" style="color: var(--clay-brown);">
+       Name
+      </label>
+      <input class="w-full border border-clay-brown rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="name" name="name" placeholder="Your full name" required="" style="color: var(--clay-dark);" type="text"/>
+     </div>
+     <div>
+      <label class="block font-semibold mb-2" for="email" style="color: var(--clay-brown);">
+       Email
+      </label>
+      <input class="w-full border border-clay-brown rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="email" name="email" placeholder="you@example.com" required="" style="color: var(--clay-dark);" type="email"/>
+     </div>
+     <div>
+      <label class="block font-semibold mb-2" for="message" style="color: var(--clay-brown);">
+       Message
+      </label>
+      <textarea class="w-full border border-clay-brown rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="message" name="message" placeholder="Write your message here..." required="" rows="5" style="color: var(--clay-dark);"></textarea>
+     </div>
+     <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream font-semibold px-6 py-3 rounded-md shadow-md transition w-full" type="submit">
+      Send Message
+     </button>
+    </form>
+    <div class="mt-8 flex justify-center space-x-8 text-[var(--clay-red)] text-2xl">
+     <a aria-label="Instagram" class="hover:text-[#8a3f2a] transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="Facebook" class="hover:text-[#8a3f2a] transition" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+    </div>
+   </section>
+  </main>
+  <hr class="border-t border-clay-orange my-16 max-w-7xl mx-auto"/>
+  <!-- Footer -->
+  <footer class="bg-clay-cream shadow-inner py-10 border-t border-clay-orange">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+    <nav class="flex space-x-8 font-semibold" style="color: var(--clay-brown);">
+     <a class="hover:text-[var(--clay-red)] transition" href="#home" style="color: var(--clay-brown);">
+      Home
+     </a>
+     <a class="hover:text-[var(--clay-red)] transition" href="#shop" style="color: var(--clay-brown);">
+      Shop
+     </a>
+     <a class="hover:text-[var(--clay-red)] transition" href="#about" style="color: var(--clay-brown);">
+      About
+     </a>
+     <a class="hover:text-[var(--clay-red)] transition" href="#contact" style="color: var(--clay-brown);">
+      Contact
+     </a>
+    </nav>
+    <div class="flex space-x-6 text-[var(--clay-red)] text-2xl">
+     <a aria-label="Instagram" class="hover:text-[#8a3f2a] transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="Facebook" class="hover:text-[#8a3f2a] transition" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+    </div>
+    <form action="#" class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto" method="POST" novalidate="">
+     <label class="sr-only" for="newsletter">
+      Newsletter Email
+     </label>
+     <input class="border border-clay-brown rounded-md p-3 w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-[var(--clay-red)]" id="newsletter" name="newsletter" placeholder="Your email address" required="" style="color: var(--clay-dark);" type="email"/>
+     <button class="bg-[var(--clay-red)] hover:bg-[#8a3f2a] text-clay-cream font-semibold px-6 py-3 rounded-md shadow-md transition w-full sm:w-auto" type="submit">
+      Subscribe
+     </button>
+    </form>
+   </div>
+   <p class="text-center text-clay-brown mt-8 text-sm">
+    © 2024 ClayCraft. All rights reserved.
+   </p>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Filter products by price range and other filters (category, color, style)
+    const filtersForm = document.getElementById('filters');
+    const productsGrid = document.querySelector('.md\\:w-3\\/4.grid');
+
+    filtersForm.addEventListener('input', () => {
+      const category = filtersForm.category.value.toLowerCase();
+      const color = filtersForm.color.value.toLowerCase();
+      const style = filtersForm.style.value.toLowerCase();
+      const priceMin = parseInt(filtersForm['price-min'].value) || 250;
+      const priceMax = parseInt(filtersForm['price-max'].value) || 2000;
+
+      const products = productsGrid.querySelectorAll('article');
+
+      products.forEach(product => {
+        const productPrice = parseInt(product.getAttribute('data-price')) || 0;
+        const title = product.querySelector('h3').textContent.toLowerCase();
+
+        // Check price range
+        const inPriceRange = productPrice >= priceMin && productPrice <= priceMax;
+
+        // Check category filter
+        const matchesCategory = category === '' || title.includes(category);
+
+        // Check color filter
+        const matchesColor = color === '' || title.includes(color);
+
+        // Check style filter
+        const matchesStyle = style === '' || title.includes(style);
+
+        if (inPriceRange && matchesCategory && matchesColor && matchesStyle) {
+          product.style.display = '';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  </script>
+ </body>
+</html>
